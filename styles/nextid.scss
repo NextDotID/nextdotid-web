@@ -39,6 +39,7 @@
 /*! Next.ID */
 body {
   background: $dark-color;
+  color: $light-color;
   font-weight: 500;
   overflow-x: hidden;
 }
@@ -53,6 +54,7 @@ body {
     height: 10vh;
     position: fixed;
     width: 100vw;
+    z-index: -1;
   }
 
   .nextid-bg-next {
@@ -68,8 +70,21 @@ body {
     position: absolute;
     right: 5vw;
   }
+
+  @media screen and (max-width: $size-md) {
+    .nextid-bg-next {
+      height: 50vh;
+      left: -5vw;
+    }
+
+    .nextid-bg-id {
+      height: 50vh;
+      right: -5vw;
+    }
+  }
 }
 
+// Header & Footer
 .nextid-header {
   align-items: center;
   display: flex;
@@ -80,40 +95,54 @@ body {
     height: 1.6rem;
     width: auto;
   }
+}
+
+.nextid-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: .5rem 0;
 
   .nextid-nav {
-    align-items: center;
-    display: flex;
-
-    .nextid-menu-link {
-      border-radius: .4rem;
-      color: darken($light-color, 10%);
-      display: flex;
-      font-size: .7rem;
-      padding: .2rem .4rem;
-      text-decoration: none;
-
-      &:focus,
-      &:hover {
-        background: rgba($light-color, .05);
-        color: darken($light-color, 6%);
-      }
-
-      &.disabled,
-      &:disabled {
-        background: transparent;
-        color: darken($light-color, 20%);
-      }
+    &:not(:first-child) {
+      margin-top: 1rem;
     }
-  }
-
-  .nextid-social-link {
-    color: $light-color;
-    height: 1rem;
-    width: 1rem;
   }
 }
 
+.nextid-nav {
+  align-items: center;
+  display: flex;
+
+  .nextid-menu-link {
+    border-radius: .4rem;
+    color: darken($light-color, 10%);
+    display: flex;
+    font-size: .7rem;
+    padding: .4rem .4rem;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      background: rgba($light-color, .05);
+      color: darken($light-color, 6%);
+    }
+
+    &.disabled,
+    &:disabled {
+      background: transparent;
+      color: darken($light-color, 20%);
+    }
+
+    svg {
+      color: $light-color;
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
+
+//- Section
 .nextid-section {
   padding: 15vh 0;
   text-align: center;
@@ -132,7 +161,7 @@ body {
     }
 
     @media screen and (max-width: $size-sm) {
-      font-size: 2rem;
+      font-size: 1.6rem;
     }
   }
 
@@ -149,6 +178,45 @@ body {
 .nextid-hero {
   .nextid-section-title {
     font-size: 3rem;
+
+    @media screen and (max-width: $size-sm) {
+      font-size: 2rem;
+    }
+  }
+}
+
+.nextid-faq {
+  .nextid-faq-container {
+    font-size: .8rem;
+    padding-top: 2rem;
+
+    a {
+      color: darken($light-color, 20%);
+      text-decoration: underline;
+
+      &:focus,
+      &:hover {
+        color: $light-color;
+      }
+    }
+  }
+
+  .nextid-faq-question {
+    font-weight: 700;
+    padding-top: .8rem;
+  }
+
+  .nextid-faq-answer {
+    border-bottom: .05rem solid rgba($light-color, .05);
+    color: darken($light-color, 30%);
+    font-weight: 400;
+    padding-bottom: 2rem;
+  }
+
+  .nextid-faq-note {
+    color: darken($light-color, 30%);
+    font-weight: 400;
+    padding-top: .8rem;
   }
 }
 

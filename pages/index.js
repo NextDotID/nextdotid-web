@@ -25,7 +25,7 @@ export default function Home() {
             <h1 className="nextid-title text-assistive">Next.ID</h1>
             <LogoNextID className="nextid-logo" alt="Next.ID" />
           </a>
-          <nav className="nextid-nav">
+          <nav className="nextid-nav hide-sm">
             <div className="nextid-menu-link disabled">
               Dashboard
               <span className="label label-primary ml-1">COMING SOON</span>
@@ -34,11 +34,11 @@ export default function Home() {
           </nav>
 
           <div className="nextid-nav">
-            <a className="nextid-menu-link ml-2 mr-2" 
+            <a className="nextid-menu-link ml-1" 
               href="https://twitter.com/NextDotID" target="_blank" rel="noopener noreferrer">
               <IconTwitter />
             </a>
-            <a className="nextid-menu-link ml-2"
+            <a className="nextid-menu-link ml-1"
               href="https://github.com/nextdotid" target="_blank" rel="noopener noreferrer">
               <IconGitHub />
             </a>
@@ -66,21 +66,54 @@ export default function Home() {
         </div>
 
         <div id="faq"
-           className="nextid-mask nextid-section container grid-md">
+           className="nextid-faq nextid-section container grid-sm">
           <h2 className="nextid-section-title">
             FAQ
           </h2>
           <p className="nextid-section-subtitle">
             You ask. We answer. 
           </p>
-          <p>
-            
-          </p>
+          <div className="nextid-faq-container">
+            <p className="nextid-faq-question">
+              What is Next.ID actually?
+            </p>
+            <p className="nextid-faq-answer">
+              A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system. Your friends or followers can easily find you on any supported platforms.
+            </p>
+            <p className="nextid-faq-question">
+              How can I use Next.ID APIs?
+            </p>
+            <p className="nextid-faq-answer">
+              You can view and use Next.ID APIs in the <a href="https://github.com/nextdotid/proof-server/tree/master/docs" target="_blank" rel="noopener noreferrer">Next.ID GitHub</a>.
+            </p>
+            <p className="nextid-faq-question">
+              What is the infrastructure for Next.ID?
+            </p>
+            <p className="nextid-faq-answer">
+              We will announce something soon.
+            </p>
+            <p className="nextid-faq-note">
+              If you still have a question, you can always contact us. <a href="mailto:hello@next.id">hello@next.id</a>
+            </p>
+          </div>
         </div>
       </main>
 
       <footer className="nextid-footer">
-        
+        <div className="nextid-nav">
+          <a className="nextid-menu-link ml-1" 
+            href="https://twitter.com/NextDotID" target="_blank" rel="noopener noreferrer">
+            <IconTwitter />
+          </a>
+          <a className="nextid-menu-link ml-1"
+            href="https://github.com/nextdotid" target="_blank" rel="noopener noreferrer">
+            <IconGitHub />
+          </a>
+        </div>
+        <div className="nextid-nav">
+          <p>&copy; 2022 Next.ID</p>
+          {/* <a href="#" className="nextid-menu-link ml-2 mr-2">Privacy Policy</a><a href="#" className="nextid-menu-link">Terms of Service</a> */}
+        </div>
       </footer>
     </>
   )
