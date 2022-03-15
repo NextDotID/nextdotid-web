@@ -10,8 +10,24 @@ export default function Home() {
     <>
       <Head>
         <title>Next.ID</title>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
         <meta name="description" content="Supercharge Your Identity with Web3 - A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system." />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@NextDotID" />
+        <meta name="twitter:creator" content="@NextDotID"/>
+        <meta property="og:title" content="Next.ID" />
+        <meta property="og:description" content="Supercharge Your Identity with Web3 - A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system." />
+        <meta property="og:url" content="https://next.id" />
+        <meta property="og:image" content="/nextid-social-image.jpg" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="Next.ID" />
+        <link rel="canonical" href="https://next.id" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
       <main className="nextid-container">
