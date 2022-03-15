@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../styles/nextid.scss'
 
-function MyApp({ Component, pageProps }) {
+function NextApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default NextApp

@@ -1,0 +1,53 @@
+// Variables and mixins
+@import "variables";
+@import "mixins";
+
+/*! Spectre.css | MIT License | github.com/picturepan2/spectre */
+// Reset and dependencies
+@import "normalize";
+@import "base";
+
+// Elements
+@import "typography";
+@import "asian";
+@import "tables";
+@import "buttons";
+@import "forms";
+@import "labels";
+@import "media";
+
+// Layout
+@import "layout";
+
+// Components
+@import "avatars";
+@import "cards";
+@import "dropdowns";
+@import "empty";
+@import "menus";
+@import "modals";
+@import "navs";
+@import "pagination";
+@import "tabs";
+@import "toasts";
+@import "tooltips";
+
+// Utility classes
+@import "animations";
+@import "utilities";
+
+/*! Next.ID */
+body {
+  background: $dark-color;
+  overflow-x: hidden;
+}
+
+.nextid-container {
+  min-height: 100vh;
+  padding: 1rem .5rem;
+  width: 100vw;
+}
+
+.nextid-header {
+  
+}
