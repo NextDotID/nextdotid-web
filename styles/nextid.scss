@@ -39,6 +39,7 @@
 /*! Next.ID */
 body {
   background: $dark-color;
+  font-weight: 500;
   overflow-x: hidden;
 }
 
@@ -46,8 +47,108 @@ body {
   min-height: 100vh;
   padding: 1rem .5rem;
   width: 100vw;
+
+  .nextid-bg {
+    bottom: 0;
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+  }
+
+  .nextid-bg-next {
+    bottom: 0;
+    height: 75vh;
+    left: 5vw;
+    position: absolute;
+  }
+
+  .nextid-bg-id {
+    bottom: 0;
+    height: 75vh;
+    position: absolute;
+    right: 5vw;
+  }
 }
 
 .nextid-header {
-  
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 0;
+
+  .nextid-logo {
+    height: 1.6rem;
+    width: auto;
+  }
+
+  .nextid-nav {
+    align-items: center;
+    display: flex;
+
+    .nextid-menu-link {
+      border-radius: .4rem;
+      color: darken($light-color, 10%);
+      display: flex;
+      font-size: .7rem;
+      padding: .2rem .4rem;
+      text-decoration: none;
+
+      &:focus,
+      &:hover {
+        background: rgba($light-color, .05);
+        color: darken($light-color, 6%);
+      }
+
+      &.disabled,
+      &:disabled {
+        background: transparent;
+        color: darken($light-color, 20%);
+      }
+    }
+  }
+
+  .nextid-social-link {
+    color: $light-color;
+    height: 1rem;
+    width: 1rem;
+  }
 }
+
+.nextid-section {
+  padding: 15vh 0;
+  text-align: center;
+
+  .nextid-section-title {
+    color: $light-color;
+    font-weight: 900;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+
+    strong {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(25deg, #1C68F3 0%, #F5C2EE 100%);
+      font-weight: 900;
+    }
+
+    @media screen and (max-width: $size-sm) {
+      font-size: 2rem;
+    }
+  }
+
+  .nextid-section-subtitle {
+    color: darken($light-color, 3%);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem auto;
+    max-width: $size-xs;
+    opacity: .75;
+  }
+}
+
+.nextid-hero {
+  .nextid-section-title {
+    font-size: 3rem;
+  }
+}
+

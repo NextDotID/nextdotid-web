@@ -3,10 +3,10 @@
   border-radius: $border-radius;
   font-size: 85%;
   line-height: 1.2;
-  padding: .15rem .4rem;
+  padding: .15rem .2rem;
 }
 
 @mixin label-variant($color: $light-color, $bg-color: $primary-color) {
-  background: $bg-color;
+  background: rgba($color, .15);
   color: $color;
 }
