@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
 import IconTwitter from '../public/assets/icon-twitter.svg'
 import IconGitHub from '../public/assets/icon-github.svg'
 import LogoNextID from '../public/assets/nextid-logo.svg'
@@ -12,7 +14,7 @@ export default function Home() {
         <title>Next.ID</title>
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <meta name="description" content="Supercharge Your Identity with Web3 - A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system." />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
@@ -37,10 +39,12 @@ export default function Home() {
         </div>
 
         <header className="nextid-header container grid-md">
-          <a href="/" className="nextid-logo-link">
-            <h1 className="nextid-title text-assistive">Next.ID</h1>
-            <LogoNextID className="nextid-logo" alt="Next.ID" />
-          </a>
+          <Link href="/">
+            <a className="nextid-logo-link">
+              <h1 className="nextid-title text-assistive">Next.ID</h1>
+              <LogoNextID className="nextid-logo" alt="Next.ID" />
+            </a>
+          </Link>
           <nav className="nextid-nav hide-sm">
             <div className="nextid-menu-link disabled">
               Dashboard
