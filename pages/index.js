@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:title" content="Next.ID" />
         <meta property="og:description" content="Your Digital Identities, In One Place - An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities." />
         <meta property="og:url" content="https://next.id" />
-        <meta property="og:image" content="/nextid-social-image.jpg" />
+        <meta property="og:image" content="/assets/nextid-social-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Next.ID" />
         <link rel="canonical" href="https://next.id" />

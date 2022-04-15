@@ -6,8 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "export": "next export",
-    "predeploy": "next build && next export",
-    "deploy": "gh-pages -d out",
+    "predeploy": "next build && next export && touch ./out/.nojekyll && echo 'next.id' > ./out/CNAME",
+    "deploy": "gh-pages -d out -t true",
     "start": "next start",
     "lint": "next lint"
   },
