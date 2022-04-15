@@ -16,14 +16,14 @@ export default function Home() {
         <meta charSet="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-        <meta name="description" content="Supercharge Your Identity with Web3 - A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system." />
+        <meta name="description" content="Your Digital Identities, In One Place - An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities." />
         <meta name="robots" content="index,follow" />
         <meta name="googlebot" content="index,follow" />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:site" content="@NextDotID" />
         <meta name="twitter:creator" content="@NextDotID"/>
         <meta property="og:title" content="Next.ID" />
-        <meta property="og:description" content="Supercharge Your Identity with Web3 - A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system." />
+        <meta property="og:description" content="Your Digital Identities, In One Place - An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities." />
         <meta property="og:url" content="https://next.id" />
         <meta property="og:image" content="/nextid-social-image.jpg" />
         <meta property="og:type" content="website" />
@@ -69,7 +69,7 @@ export default function Home() {
         <div className="nextid-hero nextid-section container grid-md">
           <h2 className="nextid-section-title">
             Your <strong>Digital Identities</strong>, 
-            <br/>In One Place  
+            <br/>In One Place
           </h2>
           <p className="nextid-section-subtitle">An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities.</p>
         </div>
