@@ -151,6 +151,7 @@ body {
     color: $light-color;
     font-weight: 900;
     font-size: 2.4rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
 
     strong {
@@ -169,8 +170,8 @@ body {
     color: darken($light-color, 3%);
     font-size: 1rem;
     font-weight: 400;
-    margin: 1rem auto;
-    max-width: $size-xs;
+    margin: 1rem auto 2rem auto;
+    max-width: $size-sm;
     opacity: .75;
   }
 }

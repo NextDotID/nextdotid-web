@@ -6,6 +6,7 @@ import IconGitHub from '../public/assets/icon-github.svg'
 import LogoNextID from '../public/assets/nextid-logo.svg'
 import LogoBgNext from '../public/assets/bg-next.svg'
 import LogoBgID from '../public/assets/bg-id.svg'
+import LogoMask from '../public/assets/mask-logo.svg'
 
 export default function Home() {
   return (
@@ -46,19 +47,19 @@ export default function Home() {
             </a>
           </Link>
           <nav className="nextid-nav hide-sm">
-            <div className="nextid-menu-link disabled">
+            {/* <div className="nextid-menu-link disabled">
               Dashboard
               <span className="label label-primary ml-1">COMING SOON</span>
-            </div>
+            </div> */}
             <a href="#faq" className="nextid-menu-link">FAQ</a>
           </nav>
 
           <div className="nextid-nav">
-            <a className="nextid-menu-link ml-1" 
+            <a className="nextid-menu-link ml-2" 
               href="https://twitter.com/NextDotID" target="_blank" rel="noopener noreferrer">
               <IconTwitter />
             </a>
-            <a className="nextid-menu-link ml-1"
+            <a className="nextid-menu-link ml-2"
               href="https://github.com/nextdotid" target="_blank" rel="noopener noreferrer">
               <IconGitHub />
             </a>
@@ -67,21 +68,25 @@ export default function Home() {
 
         <div className="nextid-hero nextid-section container grid-md">
           <h2 className="nextid-section-title">
-            Supercharge Your <br/><strong>Identity</strong> with Web3
+            Your <strong>Digital Identities</strong>, 
+            <br/>In One Place  
           </h2>
-          <p className="nextid-section-subtitle">A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system.</p>
+          <p className="nextid-section-subtitle">An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities.</p>
         </div>
 
         <div id="mask"
            className="nextid-mask nextid-section container grid-md">
           <h2 className="nextid-section-title">
-            Connect <span className="text-primary text-large">›</span> Verify <span className="text-primary text-large">›</span> Use
+            Connect <span className="text-primary text-large">.</span> Verify <span className="text-primary text-large">.</span> Control <span className="text-primary text-large">.</span>
           </h2>
           <p className="nextid-section-subtitle">
-            You can experience Next.ID in the Mask Network browser extension and apps. 
+            <LogoMask height="64" />
+          </p>
+          <p className="nextid-section-subtitle">
+            Mask Network is the first application that leverages Next.ID as your bridge to a complete digital identity.
           </p>
           <p>
-            <a href="https://mask.io" target="_blank" rel="noopener noreferrer" className="btn btn-primary ml-2">Install MASK ›</a>
+            <a href="https://mask.io/?utm_source=nextid" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Install MASK ›</a>
           </p>
         </div>
 
@@ -90,30 +95,64 @@ export default function Home() {
           <h2 className="nextid-section-title">
             FAQ
           </h2>
-          <p className="nextid-section-subtitle">
-            You ask. We answer. 
-          </p>
           <div className="nextid-faq-container">
             <p className="nextid-faq-question">
-              What is Next.ID actually?
+              What is Next.ID?
             </p>
             <p className="nextid-faq-answer">
-              A bridge to connect your Web2.0 services / cryptocurrency wallets to Next.ID identity system. Your friends or followers can easily find you on any supported platforms.
+              Next.ID is an identity protocol created by Dimension, the team behind Mask Network. Next.ID protocol serves as the nerve center of Web2 and Web3 user identities. As an open-sourced and platform-agnostic identity infrastructure, Next.ID establishes the foundation for you to fully own your Digital Identities.
             </p>
             <p className="nextid-faq-question">
-              How can I use Next.ID APIs?
+              How do I set up Next.ID?
             </p>
             <p className="nextid-faq-answer">
-              You can view and use Next.ID APIs in the <a href="https://github.com/nextdotid/proof-server/tree/master/docs" target="_blank" rel="noopener noreferrer">Next.ID GitHub</a>.
+              The initial iteration of Next.ID is embedded on the Mask Network browser extension. To explore Next.ID functionalities in full, install the extension and connect your Web2 and Web3 accounts. 
+              <br/><br/>Current supported Web2 accounts:
+              <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+              </ul>
+              Current supported Web3 apps:
+              <ul>
+                <li>Mask Network</li>
+                <li>MetaMask</li>
+                <li>OpenSea</li>
+              </ul>
             </p>
             <p className="nextid-faq-question">
-              What is the infrastructure for Next.ID?
+              What role does Next.ID play in Digital Identities in Web3?
             </p>
             <p className="nextid-faq-answer">
-              We will announce something soon.
+              Next.ID is an open-source protocol that empowers users to create their own Digital Identities across platforms as we transition towards a decentralized cyber space. 
+              <br/><br/>With Next.ID, users are able to:
+              <ul>
+                <li>Consolidate your Web2 and Web3 identities in one accessible location.</li>
+                <li>Build a complete digital identity graph via verified on-chain and off-chain actions.</li>
+                <li>Create friend and/or business networks with a more responsible understanding of second and third degree effects.</li>
+              </ul>
+            </p>
+            <p className="nextid-faq-question">
+              Do I need to connect my wallet to use Next.ID?
+            </p>
+            <p className="nextid-faq-answer">
+              The first iteration of Next.ID will be accessible via the Mask Network browser extension. You don’t need to have a digital wallet to use Next.ID; however, the core value of Next.ID V1 is making verified connections between your Web3 identities including wallet addresses with your Web2 identities.
+            </p>
+            <p className="nextid-faq-question">
+              Will all of the user data be visible and public and on-chain? 
+            </p>
+            <p className="nextid-faq-answer">
+              In Next.ID’s initial release phase, all of the user data stored through Next.ID protocol can be queried through a publicly-assessible API. The data is stored in Arweave.
+            </p>
+
+            <p className="nextid-faq-question">
+              I am a developer, how can I develop protocols and dApps on Next.ID?
+            </p>
+            <p className="nextid-faq-answer">
+              As Next.ID is committed to the principles of transparency and decentralization, developers are encouraged to visit <a href="https://github.com/nextdotid/proof-server/tree/master/docs" target="_blank" rel="noopener noreferrer">Next.ID GitHub</a> to contribute and find out more.
             </p>
             <p className="nextid-faq-note">
-              If you still have a question, you can always contact us. <a href="mailto:hello@next.id">hello@next.id</a>
+              You can also reach out via <a href="mailto:hello@next.id">hello@next.id</a>.
             </p>
           </div>
         </div>
@@ -121,11 +160,11 @@ export default function Home() {
 
       <footer className="nextid-footer">
         <div className="nextid-nav">
-          <a className="nextid-menu-link ml-1" 
+          <a className="nextid-menu-link ml-2" 
             href="https://twitter.com/NextDotID" target="_blank" rel="noopener noreferrer">
             <IconTwitter />
           </a>
-          <a className="nextid-menu-link ml-1"
+          <a className="nextid-menu-link ml-2"
             href="https://github.com/nextdotid" target="_blank" rel="noopener noreferrer">
             <IconGitHub />
           </a>
