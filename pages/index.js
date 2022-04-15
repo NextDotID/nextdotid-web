@@ -47,10 +47,10 @@ export default function Home() {
             </a>
           </Link>
           <nav className="nextid-nav hide-sm">
-            {/* <div className="nextid-menu-link disabled">
-              Dashboard
+            <div className="nextid-menu-link disabled">
+              Docs
               <span className="label label-primary ml-1">COMING SOON</span>
-            </div> */}
+            </div>
             <a href="#faq" className="nextid-menu-link">FAQ</a>
           </nav>
 
