@@ -47,11 +47,11 @@ export default function Home() {
             </a>
           </Link>
           <nav className="nextid-nav hide-sm">
-            <div className="nextid-menu-link disabled">
+            <a href="https://github.com/nextdotid/proof-server/tree/master/docs" className="nextid-menu-link mr-2" target="_blank" rel="noopener noreferrer">
               DOCS
-              <span className="label label-primary ml-1">COMING SOON</span>
-            </div>
-            <a href="#faq" className="nextid-menu-link">FAQ</a>
+              {/* <span className="label label-primary ml-1">COMING SOON</span> */}
+            </a>
+            <a href="#faq" className="nextid-menu-link ml-2">FAQ</a>
           </nav>
 
           <div className="nextid-nav">
@@ -72,6 +72,9 @@ export default function Home() {
             <br/>In One Place
           </h2>
           <p className="nextid-section-subtitle">An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities.</p>
+          <p>
+            <a href="https://mask.io/?utm_source=nextid" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Install MASK ›</a>
+          </p>
         </div>
 
         <div id="mask"
