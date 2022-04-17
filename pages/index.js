@@ -72,9 +72,6 @@ export default function Home() {
             <br/>In One Place
           </h2>
           <p className="nextid-section-subtitle">An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities.</p>
-          <p>
-            <a href="https://mask.io/?utm_source=nextid" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Install MASK ›</a>
-          </p>
         </div>
 
         <div id="mask"
