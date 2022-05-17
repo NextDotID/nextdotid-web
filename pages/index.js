@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:title" content="Next.ID" />
         <meta property="og:description" content="Your Digital Identities In One Place - An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities." />
         <meta property="og:url" content="https://next.id" />
-        <meta property="og:image" content="/assets/nextid-social-image.jpg" />
+        <meta property="og:image" content="https://next.id/assets/nextid-social-image.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Next.ID" />
         <link rel="canonical" href="https://next.id" />
@@ -47,7 +47,7 @@ export default function Home() {
             </a>
           </Link>
           <nav className="nextid-nav hide-sm">
-            <a href="https://github.com/nextdotid/proof-server/tree/master/docs" className="nextid-menu-link mr-2" target="_blank" rel="noopener noreferrer">
+            <a href="https://docs.next.id/?utm_source=nextid" className="nextid-menu-link mr-2" target="_blank" rel="noopener noreferrer">
               DOCS
               {/* <span className="label label-primary ml-1">COMING SOON</span> */}
             </a>
@@ -72,6 +72,9 @@ export default function Home() {
             <br/>In One Place
           </h2>
           <p className="nextid-section-subtitle">An open-sourced protocol that synergises your Web2 and Web3 profiles. Next.ID connects and authenticates your digital footprints, all while giving you full ownership of your identities.</p>
+          <p>
+            <a href="https://docs.next.id/?utm_source=nextid" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg">Developer Docs ›</a>
+          </p>
         </div>
 
         <div id="mask"
