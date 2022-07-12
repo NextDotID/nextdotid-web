@@ -49,7 +49,9 @@ export default function Home() {
           <nav className="nextid-nav hide-sm">
             <a href="https://docs.next.id/?utm_source=nextid" className="nextid-menu-link mr-2" target="_blank" rel="noopener noreferrer">
               DOCS
-              {/* <span className="label label-primary ml-1">COMING SOON</span> */}
+            </a>
+            <a href="https://medium.com/@Next.ID/?utm_source=nextid" className="nextid-menu-link ml-2 mr-2" target="_blank" rel="noopener noreferrer">
+              MEDIUM
             </a>
             <a href="#faq" className="nextid-menu-link ml-2">FAQ</a>
           </nav>
