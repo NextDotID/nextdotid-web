@@ -51,7 +51,7 @@ export default function Home() {
               DOCS
             </a>
             <a href="https://medium.com/@Next.ID/?utm_source=nextid" className="nextid-menu-link ml-2 mr-2" target="_blank" rel="noopener noreferrer">
-              MEDIUM
+              NEWS
             </a>
             <a href="#faq" className="nextid-menu-link ml-2">FAQ</a>
           </nav>
