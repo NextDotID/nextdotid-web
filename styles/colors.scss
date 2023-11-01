@@ -1,0 +1,17 @@
+@include text-color-variant(".blue-1", $primary-color);
+
+@include text-color-variant(".blue-2", $secondary-color-dark);
+
+@include text-color-variant(".blue-3", $gray-color);
+
+@include text-color-variant(".blue-4", $light-color);
+
+@include text-color-variant(".golden-1", $body-font-color);
+
+@include bg-color-variant(".white-1", $primary-color);
+
+@include bg-color-variant(".black-1", $secondary-color);
+
+@include bg-color-variant(".black-2", $secondary-color);
+
+
