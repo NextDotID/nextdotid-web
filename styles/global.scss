@@ -4,6 +4,7 @@
 @import "hero";
 @import "partners";
 @import "comments";
+@import "story";
 
 body {
     height: 100vh;
@@ -69,6 +70,16 @@ body {
     color: $blue-1;
     background-color: $white-1;
     border: 1px solid $blue-1;
+}
+.third{
+    color: $blue-1;
+    background-color: $golden-1;
+    border: 1px solid $golden-1;
+}
+.forth{
+    color: $blue-1;
+    background-color: $blue-3;
+    border: 1px solid $blue-3;
 }
 
 .menu-container {

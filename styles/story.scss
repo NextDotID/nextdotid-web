@@ -1,0 +1,108 @@
+.title {
+    color: $blue-1;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.05rem;
+
+    span {
+        color: $blue-3
+    }
+}
+
+.socioverse {
+    display: flex;
+    width: fit-content;
+    margin:  0 auto;
+    gap: 5rem;
+    padding: 3.75rem 8.75rem;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+        display: flex;
+        width: 37.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.125rem;
+        flex-shrink: 0;
+
+
+
+
+        .content {
+            color: $black-1;
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+
+    .img {
+        width: 28.125rem;
+        height: 28.125rem;
+        flex-shrink: 0;
+    }
+}
+
+.philosophy {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 3.75rem 8.75rem;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+
+    .items {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        gap: 3.125rem;
+
+        .item {
+            display: flex;
+            width: 34.6875rem;
+            height: 28.125rem;
+            padding: 2rem;
+            box-sizing: border-box;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .header {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                font-weight: 400;
+
+                gap: 1.5rem;
+
+                .title {
+                    color: $blue-1;
+                    font-size: 2rem;
+                    line-height: 1.5;
+                }
+
+                .sub {
+                    color: $black-1;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+
+        .item-1 .header .title {
+            color: $white-2;
+        }
+
+        .item-1 .header .sub {
+            color: $white-2;
+        }
+    }
+}
