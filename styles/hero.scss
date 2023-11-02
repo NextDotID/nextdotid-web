@@ -68,32 +68,42 @@
         position: absolute;
         bottom: 0;
         background: $golden-1;
-        max-width: 200%;
+        width: 100%;
         padding: 1.125rem 0;
         box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: flex-start;
 
         .slide {
-            position: relative;
+            flex: 0 0 auto;
             overflow: hidden;
+            transform-style: preserve-3d;
+            will-change: transform;
             animation: moveSlideshow 25s linear infinite;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 4rem;
+            margin: 0 2rem;
 
             .icon {
                 height: 2.25rem;
                 width: auto;
             }
+
+
         }
     }
+
     @keyframes moveSlideshow {
         0% {
-            transform: translateX(0);
+            transform: translate3d(0, 0px, 0px);
         }
 
         100% {
-            transform: translateX(-50%);
+            transform: translate3d(calc(-100% - 4rem), 0px, 0px);
         }
     }
 

@@ -4,7 +4,6 @@ import Button from "./Button";
 import { scrollPartners } from "@/utils/constants";
 
 export default function Hero() {
-  
   return (
     <div className="hero">
       <div className="float-banner">
@@ -77,15 +76,23 @@ export default function Hero() {
       </div>
       <div className="hero-scroll">
         <div className="slide">
-        {scrollPartners.map((x) => {
-          return (
-            <Link href={x.link} key={x.name}>
-              <img className="icon" src={x.img} alt="" />
-            </Link>
-          );
-        })}
+          {scrollPartners.map((x, idx) => {
+            return (
+              <Link href={x.link} key={x.name + idx}>
+                <img className="icon" src={x.img} alt="" />
+              </Link>
+            );
+          })}
         </div>
-       
+        <div className="slide">
+          {scrollPartners.map((x, idx) => {
+            return (
+              <Link href={x.link} key={x.name + idx}>
+                <img className="icon" src={x.img} alt="" />
+              </Link>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

@@ -1,32 +1,32 @@
 export const scrollPartners = [
   {
     name: "unstoppabledomains",
-    link: "",
+    link: "https://unstoppabledomains.com/",
     img: "imgs/partners/unstoppabledomains.svg",
   },
   {
     name: "mask",
-    link: "",
+    link: "https://mask.io",
     img: "imgs/partners/mask.svg",
   },
   {
     name: "nftgo",
-    link: "",
+    link: "https://nftgo.io/",
     img: "imgs/partners/nftgo.svg",
   },
   {
     name: "dotbit",
-    link: "",
+    link: "https://d.id/",
     img: "imgs/partners/dotbit.svg",
   },
   {
     name: "collabland",
-    link: "",
+    link: "https://www.collab.land/",
     img: "imgs/partners/collabland.svg",
   },
   {
     name: "0xscope",
-    link: "",
+    link: "https://www.0xscope.com/",
     img: "imgs/partners/0xscope.svg",
   },
   {
@@ -36,57 +36,12 @@ export const scrollPartners = [
   },
   {
     name: "firefly",
-    link: "",
+    link: "https://firefly.land/",
     img: "imgs/partners/firefly.svg",
   },
   {
     name: "swapchat",
-    link: "",
-    img: "imgs/partners/swapchat.svg",
-  },
-  {
-    name: "unstoppabledomains",
-    link: "",
-    img: "imgs/partners/unstoppabledomains.svg",
-  },
-  {
-    name: "mask",
-    link: "",
-    img: "imgs/partners/mask.svg",
-  },
-  {
-    name: "nftgo",
-    link: "",
-    img: "imgs/partners/nftgo.svg",
-  },
-  {
-    name: "dotbit",
-    link: "",
-    img: "imgs/partners/dotbit.svg",
-  },
-  {
-    name: "collabland",
-    link: "",
-    img: "imgs/partners/collabland.svg",
-  },
-  {
-    name: "0xscope",
-    link: "",
-    img: "imgs/partners/0xscope.svg",
-  },
-  {
-    name: "frame",
-    link: "",
-    img: "imgs/partners/frame.svg",
-  },
-  {
-    name: "firefly",
-    link: "",
-    img: "imgs/partners/firefly.svg",
-  },
-  {
-    name: "swapchat",
-    link: "",
+    link: "https://swapchat.me",
     img: "imgs/partners/swapchat.svg",
   },
 ];
