@@ -18,19 +18,14 @@ export default function Navbar() {
       <Menu />
       <Link href={"https://mask.io"} target="_blank">
         <Button variant="primary">
-          MASK NETWORK{" "}
-          <Image width={20} height={20} src="imgs/arrow-right.svg" alt="" />{" "}
+          MASK NETWORK
+          <Image width={20} height={20} src="imgs/arrow-right.svg" alt="" />
         </Button>
       </Link>
       <Link href={"https://web3.bio/"} target="_blank">
         <Button variant="secondary">
           WEB3.BIO
-          <Image
-            width={20}
-            height={20}
-            src="imgs/arrow-right-up.svg"
-            alt=""
-          />{" "}
+          <Image width={20} height={20} src="imgs/arrow-right-up.svg" alt="" />
         </Button>
       </Link>
     </div>

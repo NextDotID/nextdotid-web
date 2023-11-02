@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 5rem);
+
+    .float-banner {
+        position: absolute;
+        font-weight: 400;
+        top: 0;
+        width: 100%;
+        background-color: #030227;
+        opacity: .7;
+        font-size: 1rem;
+        line-height: 2.5rem;
+        color: #fff;
+        text-align: center;
+        height: 2.5rem;
+        z-index: 2;
+
+        a {
+            color: $blue-3
+        }
+    }
+
+    .hero-content {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 11.5rem;
+        left: 5rem;
+        gap: 2rem;
+
+        .hero-title {
+            font-size: 4.125rem;
+            font-weight: 500;
+            line-height: 1.1;
+            letter-spacing: -2%;
+            color: $blue-1;
+        }
+
+        .sub-title {
+            color: $blue-1;
+            font-size: 1.375rem;
+            font-weight: 400;
+            line-height: 1.4;
+            letter-spacing: 0em;
+            text-align: left;
+
+        }
+
+        .btn-group {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+        }
+
+    }
+
+    .hero-image {
+        position: absolute;
+        right: 3%;
+        top: 3%;
+        z-index: 1;
+    }
+
+    .hero-scroll {
+        position: absolute;
+        bottom: 0;
+        background: $golden-1;
+        max-width: 200%;
+        padding: 1.125rem 0;
+        box-sizing: border-box;
+
+        .slide {
+            position: relative;
+            overflow: hidden;
+            animation: moveSlideshow 25s linear infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+
+            .icon {
+                height: 2.25rem;
+                width: auto;
+            }
+        }
+    }
+    @keyframes moveSlideshow {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+
+}

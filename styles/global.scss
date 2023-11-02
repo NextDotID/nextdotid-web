@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins/color.scss";
 @import "colors";
+@import "hero";
 
 body {
     height: 100vh;
@@ -25,6 +26,7 @@ body {
 }
 
 .navbar {
+    min-height: 5rem;
     height: 5rem;
     width: 100%;
     display: flex;
@@ -111,8 +113,12 @@ body {
         overflow-y: auto;
         position: absolute;
         top: 100%;
+        background-color: $golden-1;
+        padding: 1rem 1.25rem;
 
-        .list-item {}
+        .list-item {
+            list-style: none;
+        }
     }
 
     &.list-right {
