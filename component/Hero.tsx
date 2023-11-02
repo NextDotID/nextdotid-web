@@ -16,11 +16,9 @@ export default function Hero() {
           Mask Extension
         </Link>
       </div>
-      <Image
+      <img
         className="hero-image"
         src={"/imgs/hero-image.svg"}
-        width={761}
-        height={763}
         alt="hero"
       />
       <div className="hero-content">

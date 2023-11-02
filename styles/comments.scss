@@ -1,0 +1,38 @@
+.comments {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 3.75rem 8.75rem;
+    box-sizing: border-box;
+    gap: 5rem;
+
+    .item {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1 0 0;
+        align-self: stretch;
+
+        .img {
+            width: auto;
+            height: 18.75rem;
+            margin-bottom: 3.75rem;
+        }
+
+        .content {
+           width: 100%;
+            margin: 0 1.75rem;
+            box-sizing: border-box;
+
+            .text {
+                color: $black-1;
+                font-size: 1.375rem;
+                font-weight: 400;
+                line-height: 1.5;
+            }
+        }
+
+    }
+}
