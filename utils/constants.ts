@@ -54,3 +54,5 @@ export const scrollPartners = [
     coloredImg: 'imgs/partners/colored/swapchat.svg'
   },
 ];
+
+
