@@ -51,7 +51,88 @@ const FAQRenderMap = [
         How does Next.ID make the connection between Web2 and Web3 identities?
       </div>
     ),
-    content: () => <div className="faq-body"></div>,
+    content: () => (
+      <div className="faq-body">
+        <div className="paragraph">
+          Binding Web2 and Web3 data involves linking traditional internet
+          identities like social media profiles (Twitter, Facebook, etc) with
+          decentralized blockchain identifiers (MetaMask, Lens) to create a
+          comprehensive digital identity. This process is achieved through
+          cryptographic proof where a digital identity is created by enabling
+          users to sign a message with their decentralized identifier (DID)
+          private key
+        </div>
+        <div className="paragraph">
+          {
+            "Let’s take Twitter and an Ethereum wallet as an example. Linking your Twitter profile and Ethereum wallet to create a digital identity essentially involves proving that you are the owner of both the Twitter account (Web2) and the Ethereum address (Web3). Here's a step-by-step breakdown:"
+          }
+        </div>
+        <div className="grid">
+          <div className="grid-item grid-1">
+            <div className="grid-title">Step 1:<br/> Initiate the link</div>
+            <div className="grid-content">
+              You would begin the process on Next.ID.
+            </div>
+          </div>
+          <div className="grid-item grid-2">
+            <div className="grid-title">
+              Step 2: Sign a message with your Next.ID private key
+            </div>
+            <div className="grid-item-content">
+              Next.ID will generate a unique message for you to sign. You sign
+              this message using your Next.ID private key, which is a process
+              that can usually be handled by your Next.ID private key. This
+              generates a cryptographic signature.
+            </div>
+          </div>
+          <div className="grid-item grid-3">
+            <div className="grid-title">
+              Step 3: Post the signature on selected platforms like Twitter or
+              Discord
+            </div>
+            <div className="grid-content">
+              Once you have the signature, Next.ID will ask you to post this
+              signature publicly on your selected social media account. This
+              could be in the form of a tweet, or it could be added to your
+              profile information. This serves as a public declaration linking
+              your Next.ID to your Web2 social account.
+            </div>
+          </div>
+          <div className="grid-item grid-4">
+            <div className="grid-title">Step 5: Verify the link</div>
+            <div className="grid-content">
+              The platform then checks your Twitter account for the presence of
+              this signature and validates it against the original message using
+              your Ethereum public address. If it matches, it proves that the
+              owner of the Ethereum address is the same as the Twitter account
+              owner.
+            </div>
+          </div>
+          <div className="grid-item grid-5">
+            <div className="grid-title">Step 6: Store the verified link</div>
+            <div className="grid-content">
+              Once the link has been verified, Next.ID records the successful
+              link between your Ethereum address and your Twitter account. This
+              record serves as a part of your digital identity
+            </div>
+          </div>
+          <div className="grid-item grid-6">
+            <div className="grid-title">Step 4: Verify the link</div>
+            <div className="grid-content">
+              {` Next.ID then checks your Twitter account for the presence of this
+              signature. Next.ID accesses information from Twitter through
+              Twitter's Application Programming Interface (API). APIs are tools
+              that allow different software applications to communicate and
+              interact with each other. In this case, Twitter's API can allow
+              Next.ID to read public tweets or profile information. To verify
+              the link between your Ethereum wallet and your Twitter account,
+              Next.ID uses the Twitter API to look for the tweet or profile
+              information where you posted the cryptographic signature.`}
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
   },
   {
     key: "Do you save devs time?",
