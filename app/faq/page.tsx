@@ -48,7 +48,8 @@ const FAQRenderMap = [
     key: "How does Next.ID make the connection between Web2 and Web3 identities?",
     title: () => (
       <div className="faq-title">
-        How does Next.ID make the connection between Web2 and Web3 identities?
+        How does <span>Next.ID</span> make the connection between Web2 and Web3
+        identities?
       </div>
     ),
     content: () => (
@@ -69,7 +70,10 @@ const FAQRenderMap = [
         </div>
         <div className="grid">
           <div className="grid-item grid-1">
-            <div className="grid-title">Step 1:<br/> Initiate the link</div>
+            <div className="grid-title">
+              Step 1:
+              <br /> Initiate the link
+            </div>
             <div className="grid-content">
               You would begin the process on Next.ID.
             </div>
@@ -99,7 +103,10 @@ const FAQRenderMap = [
             </div>
           </div>
           <div className="grid-item grid-4">
-            <div className="grid-title">Step 5:<br/> Verify the link</div>
+            <div className="grid-title">
+              Step 5:
+              <br /> Verify the link
+            </div>
             <div className="grid-content">
               The platform then checks your Twitter account for the presence of
               this signature and validates it against the original message using
@@ -117,7 +124,10 @@ const FAQRenderMap = [
             </div>
           </div>
           <div className="grid-item grid-6">
-            <div className="grid-title">Step 4:<br/> Verify the link</div>
+            <div className="grid-title">
+              Step 4:
+              <br /> Verify the link
+            </div>
             <div className="grid-content">
               {` Next.ID then checks your Twitter account for the presence of this
               signature. Next.ID accesses information from Twitter through
@@ -196,13 +206,20 @@ const FAQRenderMap = [
             "Next.ID boosts users' online security by facilitating the creation of a digital identity that's not linked to their digital wallets (where their funds are stored, i.e. MetaMask). Users are able to log into different dApps using Next.ID, instead of using their wallets, to prevent exposing their wallet credentials. This Next.ID Website 10 reduces the chance of a single security mishap compromising everything. While the main goal is safeguarding user digital funds, this method also helps make their overall data safer."
           }
         </div>
+        <div className="quotation">
+          <img src="imgs/faq/quotation.svg" alt="" />
+          <div className="quotation-title">{`“Please provide use cases of how/why and how this improves the user experience”`}</div>
+          <div className="paragraph">{`Next.ID's identity graph can analyze a user's existing social connections on Twitter and suggest relevant friends or accounts to follow. By understanding the user's social network, it can recommend people who have mutual connections or share similar interests, facilitating the discovery of engaging and relevant content. We aim to address the cold-start problem of many Web3 applications by opening up more leads through the Web2 identity graph.`}</div>
+        </div>
       </div>
     ),
   },
   {
     key: "How do you improve DAO governance?",
     title: () => (
-      <div className="faq-title">How do you improve DAO governance?</div>
+      <div className="faq-title">
+        How do you improve <span>DAO</span> governance?
+      </div>
     ),
     content: () => (
       <div className="faq-body">
@@ -216,7 +233,11 @@ const FAQRenderMap = [
   },
   {
     key: "How do I set up Next.ID?",
-    title: () => <div className="faq-title">How do I set up Next.ID?</div>,
+    title: () => (
+      <div className="faq-title">
+        How do I set up <span>Next.ID</span>?
+      </div>
+    ),
     content: () => (
       <div className="faq-body">
         <div className="paragraph">
@@ -244,7 +265,8 @@ const FAQRenderMap = [
     key: "What’s the relationship between Next.ID and Mask Network?",
     title: () => (
       <div className="faq-title">
-        What’s the relationship between Next.ID and Mask Network?
+        What’s the relationship between <span>Next.ID</span> and{" "}
+        <span>Mask Network</span>?
       </div>
     ),
     content: () => (
@@ -256,6 +278,10 @@ const FAQRenderMap = [
           Network, Next.ID, Firefly. The Next.ID team now has around 10 people
           working on it, most of them are developers who have years of
           experience in Web2 and Web3.
+        </div>
+        <div className="row">
+          <img src="imgs/faq/faq-3.svg" alt="" />
+          <img src="imgs/faq/faq-4.svg" alt="" />
         </div>
       </div>
     ),
@@ -312,7 +338,12 @@ export default function FAQ() {
         {FAQRenderMap.map((x, idx) => {
           return (
             <div key={x.key} className="faq-item">
-              <div className="faq-header" onClick={() => toggleExpand(idx)}>
+              <div
+                className={`faq-header ${
+                  activeIndexes.includes(idx) ? "active" : ""
+                }`}
+                onClick={() => toggleExpand(idx)}
+              >
                 {x.title()}{" "}
                 <Image
                   className="action"

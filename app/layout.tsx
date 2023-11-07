@@ -7,6 +7,7 @@ import "../styles/global.scss";
 export const text_font = Roboto_Flex({
   subsets: ["latin", "latin-ext"],
   variable: "--font-text",
+  axes: ["slnt", "wdth"],
 });
 export const title_font = Archivo({
   subsets: ["latin", "latin-ext"],
