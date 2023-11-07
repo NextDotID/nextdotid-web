@@ -9,8 +9,10 @@ export const text_font = Roboto_Flex({
   variable: "--font-text",
 });
 export const title_font = Archivo({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-title",
+  display: "swap",
+  axes: ["wdth"],
 });
 
 // todo: maintain seo issues

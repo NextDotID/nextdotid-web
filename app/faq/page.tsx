@@ -99,7 +99,7 @@ const FAQRenderMap = [
             </div>
           </div>
           <div className="grid-item grid-4">
-            <div className="grid-title">Step 5: Verify the link</div>
+            <div className="grid-title">Step 5:<br/> Verify the link</div>
             <div className="grid-content">
               The platform then checks your Twitter account for the presence of
               this signature and validates it against the original message using
@@ -117,7 +117,7 @@ const FAQRenderMap = [
             </div>
           </div>
           <div className="grid-item grid-6">
-            <div className="grid-title">Step 4: Verify the link</div>
+            <div className="grid-title">Step 4:<br/> Verify the link</div>
             <div className="grid-content">
               {` Next.ID then checks your Twitter account for the presence of this
               signature. Next.ID accesses information from Twitter through
