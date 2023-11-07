@@ -51,7 +51,8 @@
     align-items: center;
     gap: 3.125rem;
     box-sizing: border-box;
-    border-top: 1px solid var(#ffffff, $golden-1);
+    border: 1px solid;
+    border-image: linear-gradient(51.18deg, #EECB50 43.1%, #55B8FF 61.1%, #1A16B8 74.09%) 1;
     .main{
         width: 55%;
         display: flex;

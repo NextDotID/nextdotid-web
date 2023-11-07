@@ -53,6 +53,12 @@ export const scrollPartners = [
     img: "imgs/partners/swapchat.svg",
     coloredImg: 'imgs/partners/colored/swapchat.svg'
   },
+  {
+    name: "rss3",
+    link: "https://rss3.io",
+    img: "imgs/partners/rss3.svg",
+    coloredImg: 'imgs/partners/colored/rss3.svg'
+  },
 ];
 
 

@@ -6,6 +6,11 @@
 @import "comments";
 @import "story";
 @import "faq";
+@import "identity";
+
+html {
+    font-size: 16px;
+}
 
 body {
     height: 100vh;
@@ -16,6 +21,8 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     word-break: break-word;
+    font-family: var(--font-text);
+    font-weight: 300;
 
     a {
 
@@ -308,7 +315,7 @@ body {
 
 .title {
     font-family: var(--font-title);
-    font-variation-settings: 'wdth' 150;
+    font-variation-settings: 'wdth'150;
     color: $blue-1;
     font-size: 2.5rem;
     font-weight: 500;
@@ -317,5 +324,242 @@ body {
 
     span {
         color: $blue-3
+    }
+}
+
+
+.apps {
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 8.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3.125rem;
+    box-sizing: border-box;
+
+    .title-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+    }
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 1.25rem;
+
+            .app-title {
+                width: 100%;
+                font-family: var(--font-title);
+                display: flex;
+                height: 3rem;
+                flex-direction: column;
+                justify-content: center;
+                color: $blue-2;
+                text-align: center;
+                font-family: Archivo Expanded;
+                font-size: 1.375rem;
+                font-weight: 400;
+            }
+
+            .app-content {
+                width: 15rem;
+                font-family: var(--font-text);
+                color: $black-1;
+                text-align: center;
+                font-size: 1.125rem;
+                font-weight: 300;
+                line-height: 150%;
+                /* 1.6875rem */
+            }
+
+            img {
+                width: 15.625rem;
+            }
+        }
+    }
+}
+
+.counts {
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 0rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2.5rem 0.625rem;
+    flex-wrap: wrap;
+    background-color: $blue-1;
+
+    .number {
+        display: flex;
+        width: 25%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        flex-shrink: 0;
+        color: $white-1;
+
+        .num-title {
+            font-family: var(--font-title);
+            font-variation-settings: 'wdth'150;
+            text-align: center;
+            font-size: 4.5rem;
+            font-weight: 500;
+            line-height: 4.75rem;
+            /* 105.556% */
+            letter-spacing: -0.09rem;
+        }
+
+        .num-content {
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5rem;
+            /* 150% */
+        }
+    }
+}
+
+.cases {
+    display: flex;
+    width: 100%;
+    padding: 3.75rem 8.75rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.125rem;
+    box-sizing: border-box;
+
+    .row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .item {
+            width: 22%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1.75rem;
+
+            .case-title {
+                width: 100%;
+                font-family: var(--font-title);
+                height: 3rem;
+                color: $blue-2;
+                text-align: center;
+                font-size: 1.375rem;
+                font-weight: 400;
+            }
+
+            .case-content {
+                width: 100%;
+                font-family: var(--font-text);
+                color: $black-1;
+                text-align: center;
+                font-size: 1.125rem;
+                font-weight: 300;
+                line-height: 150%;
+                /* 1.6875rem */
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .intro {
+        display: flex;
+        width: 100%;
+        padding: 2.5rem 3.75rem;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 11.25rem;
+        box-sizing: border-box;
+
+        .common-title {
+            font-family: var(--font-title);
+            color: $blue-2;
+            font-variation-settings: 'wdth'150;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .left {
+            display: flex;
+            width: 30%;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+
+            .left-title {
+                font-size: 2rem;
+                color: $blue-1;
+                font-family: var(--font-title);
+                font-variation-settings: 'wdth'150;
+                letter-spacing: -0.04rem;
+                width: 100%;
+                font-weight: 500;
+                display: flex;
+                align-items: center;
+                color: $blue-1;
+                gap: 1.75rem;
+
+                span {
+                    display: block;
+                    flex: 1 1 0;
+                    height: 0.125rem;
+                    background-color: $blue-1;
+                }
+            }
+
+            .container {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.625rem;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2.5rem;
+            max-width: 30.5%;
+            flex: 1 0 0;
+
+            .common-content {
+                line-height: 1.5;
+            }
+
+            .item {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.625rem;
+            }
+        }
     }
 }
