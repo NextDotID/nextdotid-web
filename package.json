@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy":"rm -rf node_modules/.cache && next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin test/interface-v2",
     "start": "next start",
     "lint": "next lint"
   },
