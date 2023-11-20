@@ -1,11 +1,17 @@
 .identity {
     display: flex;
     width: 100%;
-    padding: 3.75rem 8.75rem;
+    padding: 3.75rem 10%;
     flex-direction: column;
     align-items: center;
     gap: 3.125rem;
     box-sizing: border-box;
+
+    @media screen and (max-width: 960px) {
+        padding: 3.75rem 0rem;
+        gap: 2.5rem;
+
+    }
 
     .title-container {
         display: flex;
@@ -17,22 +23,75 @@
         font-size: 1rem;
         font-weight: 400;
         line-height: 150%;
+
+        .title {
+            @media screen and (max-width: 960px) {
+                font-size: 2rem;
+            }
+        }
+
+        .subtitle {
+            @media screen and (max-width: 960px) {
+                font-size: 1.125rem;
+            }
+
+            color: $black-1
+        }
     }
 
     .banner {
         width: 100%;
         display: flex;
+        background: transparent;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
         gap: 1.75rem;
-
+        @media screen and (max-width:600px) {
+            padding: 0 1rem;
+        }
         .container {
             width: 100%;
             overflow: hidden;
             display: flex;
 
+            @media screen and (max-width: 600px) {
+                flex-direction: column
+            }
+
             .label {
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                    height: auto;
+                    padding: 1rem 0.625rem;
+                }
+
+                .label-title-container {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    height: 100%;
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: row;
+                    }
+                }
+
+                .icon-badge {
+                    position: absolute;
+                    width: 3.75rem;
+                    height: 3.75rem;
+                    top: 1.875rem;
+                    right: 0;
+                    display: none;
+
+
+                }
+
+                position: relative;
                 display: flex;
                 height: 20rem;
                 padding: 1rem 0.625rem;
@@ -59,6 +118,14 @@
                 }
 
                 .label-title {
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.2rem;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        writing-mode: unset;
+                    }
+
                     font-family: var(--font-title);
                     font-variation-settings: 'wdth'150;
                     font-size: 1.375rem;
@@ -68,6 +135,7 @@
                 }
 
                 .label-content {
+                    text-align: left;
                     font-size: 1.125rem;
                     font-style: normal;
                     font-weight: 300;
@@ -78,16 +146,43 @@
 
             .label-1 {
                 background-color: $blue-3;
+
+                .icon-badge {
+                    right: 1.25rem;
+                }
+
             }
 
             .label-2 {
                 background-color: $golden-1;
+
+                .label-title-container {
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: row-reverse;
+                    }
+                }
             }
 
             .label-3 {
                 background-color: $blue-1;
                 color: $white-2;
+
+                .label-title-container {
+                    flex-direction: column-reverse;
+
+                    @media screen and (max-width: 600px) {
+                        flex-direction: row-reverse;
+                    }
+                }
+
+                .active {
+                    flex-direction: column;
+                }
+
             }
+
+
 
             label {
                 display: block;
@@ -99,12 +194,46 @@
                 }
 
                 input:checked~div {
+
+                    @media screen and (max-width: 768px) {
+                        padding: 2rem 3rem;
+                    }
+
+                    @media screen and (max-width: 600px) {
+                        padding: 1.875rem 1rem;
+
+                        .icon-badge {
+                            display: block;
+                        }
+                    }
+
                     width: fit-content;
-                    padding: 2.5rem 8.75rem 2.5rem 3.75rem;
+                    padding: 2.5rem 3.75rem 2.5rem 3.75rem;
                     justify-content: center;
                     align-items: flex-start;
 
+                    .label-title-container {
+                        @media screen and (max-width:600px) {
+                            flex-direction: row;
+                            justify-content: unset;
+                            align-items: center;
+                        }
+
+                        justify-content: center;
+                        gap: .5rem;
+                        flex-wrap: wrap;
+                        text-align: left;
+                    }
+
                     .label-title {
+                        @media screen and (max-width: 768px) {
+                            font-size: 1.5rem;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            font-size: 2.5rem;
+                        }
+
                         writing-mode: unset;
                         text-align: center;
                         font-size: 2.5rem;
@@ -113,17 +242,22 @@
                     }
 
                     .label-content {
+                        @media screen and (max-width: 768px) {
+                            font-size: 1rem;
+                        }
+
+                        @media screen and (max-width: 600px) {
+                            padding: 0;
+                            min-height: 16rem;
+                            display: flex;
+                            align-items: center;
+                            text-align: left;
+                        }
+
                         display: block;
                     }
-
-
-
                 }
             }
-
-
-
-
 
         }
 
@@ -163,41 +297,53 @@
         gap: 1.5rem 2.5rem;
         flex-wrap: wrap;
 
-        .card-item {
-            display: flex;
-            width: 25%;
-            padding: 1.5rem;
-            box-sizing: border-box;
+        @media screen and (max-width: 600px) {
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: space-between;
-            gap: 1rem;
-            background: $white-2;
-            border: 1px solid $blue-1;
-            height: 12.5rem;
+        }
 
-            .card-icon {
-                width: 1.5rem;
-                height: 1.5rem;
-            }
 
-            .card-title {
-                font-family: var(--font-title);
-                font-variation-settings: 'wdth'150;
-                color: $blue-2;
-                font-size: 1.375rem;
-                font-style: normal;
-                font-weight: 500;
-                line-height: normal;
-            }
+    }
 
-            .card-content {
-                color: $black-1;
-                font-size: 1.125rem;
-                font-weight: 300;
-                line-height: 150%;
-                /* 1.6875rem */
-            }
+    .card-item {
+        @media screen and (max-width: 600px) {
+            gap: 1.5rem;
+            width: 100%;
+            max-width: 90%;
+        }
+
+        display: flex;
+        width: 22.5rem;
+        padding: 1.5rem;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 1rem;
+        background: $white-2;
+        border: 1px solid $blue-1;
+        min-height: 12.5rem;
+
+        .card-icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .card-title {
+            font-family: var(--font-title);
+            font-variation-settings: 'wdth'150;
+            color: $blue-2;
+            font-size: 1.375rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .card-content {
+            color: $black-1;
+            font-size: 1.125rem;
+            font-weight: 300;
+            line-height: 150%;
+            /* 1.6875rem */
         }
     }
 }

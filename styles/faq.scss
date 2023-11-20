@@ -1,25 +1,75 @@
 .faq {
     display: flex;
     width: 100%;
-    padding: 3.75rem 8.75rem;
-    padding-bottom: 0;
+    padding: 3.75rem 10%;
     flex-direction: column;
     align-items: center;
     gap: 1.75rem;
     box-sizing: border-box;
 
+    @media screen and (max-width: 800px) {
+        .title {
+            text-align: center;
+        }
+
+        padding: 0rem 1rem 3.75rem 1rem;
+        gap: 1rem;
+    }
+
+    .subtitle {
+        @media screen and (max-width: 768px) {
+            max-width: 25rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 640px) {
+            max-width: 16.8rem;
+            text-align: center;
+        }
+
+        color: $blue-1;
+        font-size: 1rem;
+        font-weight: 300;
+
+        a {
+            color: $blue-2;
+            text-decoration: underline;
+
+
+        }
+    }
+
+
     .faq-item {
-        width: 55%;
+        @media screen and (max-width: 1280px) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: 800px) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: 640px) {
+            width: 100%;
+        }
+
+        width: 100%;
+        max-width: 47.5rem;
         border-bottom: 1px solid var(--Blue-Black, #030227);
 
         .active {
             .faq-title {
+                width: 100%;
                 color: $blue-1 !important;
 
                 span {
                     color: $blue-3
                 }
             }
+        }
+
+        .space {
+            height: 1.25rem;
         }
 
         .faq-header {
@@ -44,7 +94,7 @@
             .faq-title {
                 color: $black-2;
                 font-size: 1.375rem;
-                font-weight: 400;
+                font-weight: 300;
                 line-height: 1.5;
 
 
@@ -65,13 +115,31 @@
 
             .grid {
                 width: 100%;
+                max-width: 100%;
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(3, 1fr);
                 grid-column-gap: 20px;
                 grid-row-gap: 20px;
 
+                @media screen and (max-width:600px) {
+                    width: 100%;
+                    display: flex;
+                    grid-column-gap: unset;
+                    grid-row-gap: unset;
+                    gap: 1.875rem;
+                    flex-direction: column;
+
+                }
+
                 .grid-item {
+
+                    @media screen and (max-width:600px) {
+                        min-width: calc(100vw - 1.875rem);
+                        border: 1rem 1.25rem;
+                        min-height: 18rem;
+                    }
+
                     padding: 1.25rem;
                     box-sizing: border-box;
                     display: flex;
@@ -129,7 +197,7 @@
                 }
             }
 
-            .row {
+            .faq-row {
                 display: flex;
                 width: 100%;
                 justify-content: center;
@@ -137,10 +205,27 @@
                 gap: 1.5rem;
 
                 img {
+                    @media screen and (max-width: 640px) {
+                        width: 10rem;
+                    }
+
+                    @media screen and (max-width: 480px) {
+                        width: 7rem;
+                    }
+
                     width: 15rem;
                 }
 
                 .badge {
+                    @media screen and (max-width: 640px) {
+                        min-width: unset;
+                        word-break: break-word;
+                        white-space: normal;
+                        min-width: 5.6875rem;
+                        padding: 0.375rem 0.75rem;
+
+                    }
+
                     min-width: 10.875rem;
                 }
             }
@@ -175,42 +260,68 @@
             }
 
             .paragraph {
-                font-variation-settings: 'wdth'25 'slnt'-10;
-                display: block;
-                color: #030227;
-                font-size: 1rem;
-                font-weight: 300;
+                color: $black-1;
                 line-height: 1.5;
-                white-space: auto;
+                white-space: normal;
+                text-align: left;
+                word-break: break-word;
+            }
+
+            .left {
+                text-align: left;
             }
         }
     }
 
-    .banner {
-        font-family: var(--font-title);
-        font-variation-settings: 'wdth'150;
-        display: flex;
-        width: 100%;
-        padding: 3.75rem 8.75rem;
-        justify-content: center;
-        background-color: $golden-1;
-        align-items: center;
-        color: $blue-1;
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: -0.04rem;
 
-        .text {
-            max-width: 62.5%;
 
-            a {
-                text-decoration: underline;
-                margin: 0 1rem;
-            }
-        }
+}
+
+.banner {
+    @media screen and (max-width: 960px) {
+        font-size: 1.25rem;
+        padding: 1.25rem 1rem;
 
     }
+
+    font-family: var(--font-title);
+    font-variation-settings: 'wdth'150;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3.75rem 10%;
+    justify-content: center;
+    background-color: $golden-1;
+    align-items: center;
+    color: $blue-1;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -0.04rem;
+
+    .text {
+        @media screen and (max-width: 960px) {
+            min-width: 20rem;
+            max-width: 100%;
+        }
+
+        max-width: 62.5%;
+
+        a {
+            text-decoration: underline;
+            margin: 0 1rem;
+        }
+    }
+
+}
+
+.scroll-to-top {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: fixed;
+    right: 8%;
+    bottom: 5%;
+    cursor: pointer;
 
 }

@@ -5,15 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy":"rm -rf node_modules/.cache && next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin test/interface-v2",
+    "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
     "next": "14.0.1",
     "react": "^18",
+    "react-clipboard.js": "^2.0.16",
     "react-dom": "^18",
-    "sass": "^1.69.5"
+    "react-inlinesvg": "^4.1.0",
+    "sass": "^1.69.5",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

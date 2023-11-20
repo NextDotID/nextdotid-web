@@ -10,16 +10,21 @@ import Identity from "@/component/Identity";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <div
+      className="h-min-screen"
+      style={{
+        width: "100%",
+      }}
+    >
       <Hero />
       <Apps />
       <Counts />
       <Cases />
       <Web3bio />
-      <Identity/>
+      <Identity />
       <Join />
       <Partners />
       <Comments />
-    </main>
+    </div>
   );
 }

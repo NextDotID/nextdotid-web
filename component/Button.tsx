@@ -1,7 +1,7 @@
 import { CSSProperties, ReactNode } from "react";
 
 interface StyledButtonProps {
-  variant: "primary" | "secondary" | "third" | "forth";
+  variant: "primary" | "secondary" | "third" | "forth" | "fifth";
   children: ReactNode;
   style?: CSSProperties;
 }
