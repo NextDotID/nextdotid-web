@@ -65,6 +65,10 @@
         }
 
         .content {
+            margin-left: 7.5rem;
+            @media screen and (max-width: 1440px) {
+                margin-left: 0;
+            }
             @media screen and (max-width: 960px) {
                 gap: 1rem;
             }
