@@ -1,26 +1,32 @@
 {
-  "name": "nextdotid-web",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "predeploy": "next build && next export && touch ./out/.nojekyll && echo 'next.id' > ./out/CNAME",
-    "deploy": "gh-pages -d out -t true",
+    "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && echo 'next.id' > out/CNAME && git add -f out/ && git commit -m \"Deploy Next.ID to gh-pages\" && git subtree push --prefix out origin gh-pages",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@svgr/webpack": "^6.2.1",
-    "gh-pages": "^3.2.3",
-    "next": "12.1.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.49.9"
+    "next": "14.0.1",
+    "react": "^18",
+    "react-clipboard.js": "^2.0.16",
+    "react-dom": "^18",
+    "react-inlinesvg": "^4.1.0",
+    "sass": "^1.69.5",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
-    "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }

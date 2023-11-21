@@ -1,0 +1,27 @@
+<svg width="320" height="321" viewBox="0 0 320 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M43.75 290.5C43.75 298.094 37.5938 304.25 30 304.25C22.4063 304.25 16.25 298.094 16.25 290.5C16.25 282.906 22.4063 276.75 30 276.75C37.5938 276.75 43.75 282.906 43.75 290.5ZM27.79 290.5L23.895 286.605L26.105 284.395L30 288.29L33.895 284.395L36.105 286.605L32.21 290.5L36.105 294.395L33.895 296.605L30 292.71L26.105 296.605L23.895 294.395L27.79 290.5Z" fill="#FE5F35"/>
+<g filter="url(#filter0_d_760_2157)">
+<path d="M76.406 73.4609H48.6399L83.3476 133.621L48.6399 193.781H76.406L111.114 133.621L76.406 73.4609Z" fill="#1C68F3"/>
+<path d="M143.508 73.4609H166.647V193.781H143.508V73.4609Z" fill="#141414"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M178.216 73.4609V193.781H210.61C243.835 193.781 270.77 166.846 270.77 133.621C270.77 100.395 243.835 73.4609 210.61 73.4609H178.216ZM201.354 170.642H210.61C231.056 170.642 247.631 154.067 247.631 133.621C247.631 113.175 231.056 96.5994 210.61 96.5994H201.354V170.642Z" fill="#141414"/>
+<rect x="108.802" y="170.642" width="23.1385" height="23.1385" fill="#1C68F3"/>
+</g>
+<rect x="0.64" y="1.14" width="318.72" height="318.72" stroke="url(#paint0_linear_760_2157)" stroke-width="1.28"/>
+<defs>
+<filter id="filter0_d_760_2157" x="37.1199" y="73.4609" width="245.17" height="144.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="12.8"/>
+<feGaussianBlur stdDeviation="5.76"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_760_2157"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_760_2157" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_760_2157" x1="65.6763" y1="92.76" x2="174.292" y2="5.37873" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EECB50"/>
+<stop offset="0.580696" stop-color="#55B8FF"/>
+<stop offset="1" stop-color="#1A16B8"/>
+</linearGradient>
+</defs>
+</svg>
