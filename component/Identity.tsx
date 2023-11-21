@@ -79,7 +79,7 @@ export default function Identity() {
                 <div className="num">01</div>
                 <div className="label-title">Easy.</div>
               </div>
-              <div className="label-content">{`Experience the effortless implementation of 'Radical Identity Solutions for Radical Apps' and discover how seamless identity management can transform your application's user experience.`}</div>
+              <div className="label-content">{`Experience the effortless implementation of 'Next.ID protocol' and discover how seamless identity management can transform your application's user experience.`}</div>
             </div>
           </label>
           <label htmlFor="second" onClick={() => setActive(1)}>

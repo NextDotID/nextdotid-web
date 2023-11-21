@@ -124,7 +124,7 @@ export default function UseCases() {
             </div>
           </div>
           <div className="item">
-            <div className="common-title">Cross-chain User Analytics:</div>
+            <div className="common-title">Cross-chain User Analytics</div>
             <div className="common-content">
               Harness rich user insights from an expansive mapping across Web2 &
               Web3. Build analytics products with comprehensive social graph

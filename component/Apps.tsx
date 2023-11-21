@@ -28,7 +28,7 @@ export default function Apps() {
     {
       key: "Relation Service",
       title: "Relation Service",
-      content: `Graph database for fast query over [100k records] 410k+ verifiable social profiles with identities like ENS and Twitter; credentials like POAP and DegenScore.`,
+      content: `Graph database for fast query over 410k+ verifiable social profiles with identities like ENS and Twitter; credentials like POAP and DegenScore.`,
       img: "imgs/apps/app-3.svg",
     },
     {

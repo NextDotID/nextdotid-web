@@ -12,7 +12,7 @@ export default function Join() {
           style={{
             textDecoration: "underline",
           }}
-          href="https://mirror.xyz/nextid.eth"
+          href="https://t.me/NextDotIDofficial"
           target="_blank"
         >
           our Community
