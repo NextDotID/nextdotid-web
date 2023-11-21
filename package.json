@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && echo 'next.id' > out/CNAME && git add -f out/ && git commit -m \"Deploy Next.ID to gh-pages\" && git subtree split --prefix out -b gh-pages && git push -f origin gh-pages:gh-pages && git branch -D gh-pages",
+    "deploy": "rm -rf node_modules/.cache && next build && touch out/.nojekyll && echo 'next.id' > out/CNAME && git add -f out/ && git commit -m \"Deploy Next.ID to gh-pages\" && git subtree split --prefix out -b gh-pages && git push -f origin gh-pages && git branch -D gh-pages",
     "start": "next start",
     "lint": "next lint"
   },
