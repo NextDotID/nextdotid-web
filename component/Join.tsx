@@ -19,10 +19,12 @@ export default function Join() {
         </Link>{" "}
         on Telegram
       </div>
-      <Button variant="third">
-        VIEW DEVELOPER DOCS{" "}
-        <Image width={20} height={20} src="imgs/arrow-right-up.svg" alt="" />
-      </Button>
+      <Link href={"https://docs.next.id/?utm_source=nextid"} target="_blank">
+        <Button variant="third">
+          VIEW DEVELOPER DOCS{" "}
+          <Image width={20} height={20} src="imgs/arrow-right-up.svg" alt="" />
+        </Button>
+      </Link>
     </div>
   );
 }
