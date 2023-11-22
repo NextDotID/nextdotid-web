@@ -5,6 +5,13 @@
     flex-direction: column;
     align-items: center;
     gap: 1.75rem;
+
+    @media screen and (max-width:768px) {
+        border: none;
+    }
+
+    border-top: 1px solid;
+    border-image: linear-gradient(51.18deg, #EECB50 43.1%, #55B8FF 61.1%, #1A16B8 74.09%) 1;
     box-sizing: border-box;
 
     @media screen and (max-width: 800px) {
@@ -12,10 +19,13 @@
             text-align: center;
         }
 
-        padding: 0rem 1rem 3.75rem 1rem;
+        padding: 3.75rem 1rem;
         gap: 1rem;
     }
 
+    @media screen and (max-width: 600px) {
+        padding: 0 1rem 3.75rem 1rem;
+    }
     .subtitle {
         @media screen and (max-width: 768px) {
             max-width: 25rem;
