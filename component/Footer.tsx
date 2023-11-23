@@ -2,9 +2,14 @@
 import useMatchBreakpoints from "@/utils/hooks";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Footer() {
-  const isMobile = useMatchBreakpoints();
+  const { isMobile } = useMatchBreakpoints();
+  const [mobile, setMobile] = useState(false);
+  useEffect(() => {
+    setMobile(isMobile);
+  }, [isMobile]);
   return (
     <div className="footer">
       <div className="container">
@@ -21,7 +26,7 @@ export default function Footer() {
           <div className="grid">
             <div className="item-1">
               <div className="grid-item ">Product</div>
-              {isMobile ? (
+              {mobile ? (
                 <div className="subtitle">
                   <Link
                     style={{
@@ -31,7 +36,7 @@ export default function Footer() {
                     target="_blank"
                   >
                     {" "}
-                    Universal Profile SDK 
+                    Universal Profile SDK
                   </Link>
                   <Link href={"https://web3.bio"} target="_blank">
                     Web3 Bio

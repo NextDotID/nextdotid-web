@@ -140,7 +140,7 @@ export default function Navbar() {
           </Link>
           <div className="divider" />
           <Link
-            href={"https://mirror.xyz/nextid.eth"}
+            href={"https://t.me/NextDotIDofficial"}
             target="_blank"
             className="mobile-menu-item"
           >

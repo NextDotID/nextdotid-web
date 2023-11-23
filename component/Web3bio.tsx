@@ -3,6 +3,7 @@ import useMatchBreakpoints from "@/utils/hooks";
 import Button from "./Button";
 import SVG from "react-inlinesvg";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function Web3bio() {
   const { isMobile } = useMatchBreakpoints();
@@ -23,10 +24,12 @@ export default function Web3bio() {
           Search your ENS, Twitter handle, and 10+ profiles on Web.bio and see
           how Next.ID Relation Service empowers next-gen link-in-bio too
         </div>
-        <Button variant="primary">
-          VISIT WEB3.BIO{" "}
-          <SVG width={20} height={20} src="imgs/arrow-right-up.svg" />
-        </Button>
+        <Link href="https://web3.bio" target="_blank">
+          <Button variant="primary">
+            VISIT WEB3.BIO{" "}
+            <SVG width={20} height={20} src="imgs/arrow-right-up.svg" />
+          </Button>
+        </Link>
       </div>
       <img className="cover" src={imgsrc} alt="" />
     </div>
