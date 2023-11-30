@@ -53,18 +53,39 @@ export default function Navbar() {
         />
       </Link>
       <Menu />
-      <Link className="link-btn" href={"https://mask.io"} target="_blank">
-        <Button variant="primary">
-          MASK NETWORK
-          <SVG width={20} height={20} src="imgs/arrow-right.svg" />
-        </Button>
-      </Link>
-      <Link className="link-btn" href={"https://web3.bio/"} target="_blank">
-        <Button variant="secondary">
-          WEB3.BIO
-          <SVG width={20} height={20} src="imgs/arrow-right-up.svg" />
-        </Button>
-      </Link>
+      <div className="dropdown">
+        <div className="link-btn menu-item">
+          <Button variant="primary">
+            EXPERIENCE NEXT.ID
+            <SVG width={20} height={20} src={"imgs/arrow-down.svg"} />{" "}
+          </Button>
+        </div>
+        <div
+          className="list"
+          style={{
+            borderTop: "none",
+          }}
+        >
+          <Link className="list-item" href={"https://mask.io"} target="_blank">
+            MASK NETWORK
+            <SVG width={20} height={20} src="imgs/arrow-right.svg" />
+          </Link>
+          <Link className="list-item" href={"https://web3.bio"} target="_blank">
+            WEB3.BIO
+            <SVG width={20} height={20} src="imgs/arrow-right.svg" />
+          </Link>
+          <Link
+            className="list-item"
+            href={"https://twitter.com/NextDotID"}
+            target="_blank"
+          >
+            <div className="center-self">
+              <SVG width={20} height={20} src="imgs/x-colored.svg" />
+              @NextDotID
+            </div>
+          </Link>
+        </div>
+      </div>
     </div>
   ) : (
     <div className="navbar">
@@ -191,6 +212,14 @@ export default function Navbar() {
             </Button>
           </Link>
         </div>
+        <Link
+          className="center-self"
+          href={"https://twitter.com/NextDotID"}
+          target="_blank"
+        >
+          <SVG width={20} height={20} src="imgs/x-colored.svg" />
+          @NextDotID
+        </Link>
       </div>
     </div>
   );

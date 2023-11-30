@@ -1,13 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+import SVG from "react-inlinesvg";
 
 export default function Menu() {
   return (
     <div className="menu-container">
       <div className="dropdown">
         <div className="menu-item">
-          Products{" "}
-          <Image width={20} height={20} src={"imgs/arrow-down.svg"} alt="" />{" "}
+          Products <SVG width={20} height={20} src={"imgs/arrow-down.svg"} />{" "}
         </div>
         <div className="list">
           <Link
@@ -15,16 +14,18 @@ export default function Menu() {
             target="_blank"
             className="list-item"
           >
-            Universal Profile SDK <img src={"imgs/arrow-right-up.svg"} alt="" />
+            Universal Profile SDK{" "}
+            <SVG width={20} height={20} src={"imgs/arrow-right-up.svg"} />
           </Link>
           <Link href={"https://web3.bio"} target="_blank" className="list-item">
-            <span>Web3 Bio</span> <img src={"imgs/arrow-right-up.svg"} alt="" />
+            <span>Web3 Bio</span>{" "}
+            <SVG width={20} height={20} src={"imgs/arrow-right-up.svg"} />
           </Link>
           <Link href={"https://mask.io"} target="_blank" className="list-item">
             <div className="inner">
               <span>Mask Extension</span> for X <p>(formerly Twitter)</p>
             </div>
-            <img src={"imgs/arrow-right-up.svg"} alt="" />
+            <SVG width={20} height={20} src={"imgs/arrow-right-up.svg"} />
           </Link>
           <Link
             href={"https://firefly.land"}
@@ -32,7 +33,7 @@ export default function Menu() {
             className="list-item"
           >
             <span>Firefly App</span>{" "}
-            <img src={"imgs/arrow-right-up.svg"} alt="" />
+            <SVG width={20} height={20} src={"imgs/arrow-right-up.svg"} />
           </Link>
         </div>
       </div>
