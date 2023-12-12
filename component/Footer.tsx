@@ -25,7 +25,7 @@ export default function Footer() {
           </Link>
           <div className="grid">
             <div className="item-1">
-              <div className="grid-item ">Product</div>
+              <div className="grid-item ">Products</div>
               {mobile ? (
                 <div className="subtitle">
                   <Link
@@ -51,7 +51,10 @@ export default function Footer() {
                 </div>
               ) : (
                 <div className="subtitle">
-                  Universal Profile SDK <span className="dot">•</span>{" "}
+                  <Link href={"https://api.web3.bio/"} target="_blank">
+                    Universal Profile SDK
+                  </Link>
+                  <span className="dot">•</span>{" "}
                   <Link href={"https://web3.bio"} target="_blank">
                     Web3 Bio
                   </Link>

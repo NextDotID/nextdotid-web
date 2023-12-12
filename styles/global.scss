@@ -322,6 +322,9 @@ body {
         z-index: 10;
 
         .list-item {
+            &:hover{
+                text-decoration: underline;
+            }
             cursor: pointer;
             display: flex;
             align-items: center;
@@ -338,10 +341,6 @@ body {
                     margin: 0;
                     font-size: 0.625rem;
                 }
-            }
-
-            span {
-                text-decoration: underline;
             }
 
             img {
@@ -460,7 +459,7 @@ body {
 
                     .subtitle {
                         color: $white-2;
-                        font-size: .5rem;
+                        font-size: 14px;
                         font-weight: 300;
 
                         @media screen and (max-width: 640px) {
@@ -471,13 +470,14 @@ body {
                             gap: .25rem;
                             margin-top: .25rem;
 
-                            a {
-                                text-decoration: underline;
-                            }
+                            // a {
+                            //     text-decoration: underline;
+                            // }
                         }
 
                         .dot {
-                            color: $blue-3
+                            color: $blue-3;
+                            margin: 0 4px;
                         }
 
                         a {
