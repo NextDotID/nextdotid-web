@@ -208,7 +208,7 @@ export default function Navbar() {
             target="_blank"
           >
             <Button variant="fifth">
-              WEB.BIO <SVG src="imgs/arrow-right.svg" />
+              WEB3.BIO <SVG src="imgs/arrow-right.svg" />
             </Button>
           </Link>
         </div>
